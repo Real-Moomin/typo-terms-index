@@ -1,0 +1,32 @@
+html, body{margin: 0; padding: 30px 0px 0px 0px; overflow-x: scroll; font-size: 0px;}
+div{display: inline-block; margin: 0;}
+#container{width: 100vw; overflow-x: scroll; height: 100vh;}
+#footer{width: 200vw; height: 30px;}
+::selection{background-color: transparent;}
+body{ -ms-overflow-style: none; } body::-webkit-scrollbar { display: none;}
+.width-1{width: 90px;}/*년도, 구분*//*년도, 구분*/
+.width-2{width: 180px;}/*소개 width-1 × 2*/
+.width-3{width: 360px;}/*제목 width-1 × 4*/
+.width-4{width: 30px;} /*여백*/
+.column:hover{background-color: #dadada; cursor: pointer;}
+.gnb-1{border-right: 1px solid #000; text-align: center; box-sizing: border-box;  height: 60px; font-size: 16px;}
+.gnb-2{border-right: 1px solid #000; text-align: center; box-sizing: border-box; height: 90px; position: relative; top: -71px; font-size: 16px;}
+.gnb-3{border-right: 1px solid #000; text-align: center; box-sizing: border-box; height: 90px; font-size: 16px;}
+.gnb-4{border-right: 1px solid #000; text-align: center; box-sizing: border-box; height: 30px; font-size: 16px;}
+.gnb-3 img{height: 88px;}
+.gnb-2:hover{cursor: pointer; background-color: #f3f3f3; transition: 0.3s;}
+.gnb-1:hover{cursor: pointer; background-color: #f3f3f3; transition: 0.3s;}
+.gnb-3:hover{cursor: pointer; background-color: #f3f3f3; transition: 0.3s;}
+.top-1{border-bottom: 3px solid #000; width: 100vw; position: fixed; top: 0px; background-color: #fff; z-index: 999;}
+.top-2{border-bottom: 1px solid #000; width: 200vw; height: 90px;}
+.top-1 span{transform: translateY(-50%); top: 48%; position: relative; display: inline-block;}
+.top-2 span{transform: translateY(-50%); top: 48%; position: relative; display: inline-block;}
+.top-3 span{transform: translateY(-50%); top: 48%; position: relative; display: inline-block;}
+.book {height: 60px;border-bottom: 1px solid #000; width: 200vw; font-size: 16px;}
+.book span{transform: translateY(-50%); top: 48%; position: relative; display: inline-block;}
+.book div {overflow:hidden; box-sizing: border-box; word-break: keep-all; text-align: left; padding-left: 16px;}
+.book div span{ text-overflow: ellipsis; width: 148px; display: block;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.book-title span{width:328px !important; }
+.book-year span{width: 58px !important; text-align: center !important; padding-left: 0px  !important;}
+.book-type span{width: 58px !important; text-align: center !important; padding-left: 0px  !important;}
+.book:hover{cursor: pointer; background-color: #f3f3f3; transition: 0.3s;}
