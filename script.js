@@ -71,11 +71,9 @@ $.getJSON(spreadsheets, function(data) {
     books[getIndex(i)] = new Book(
       Values[i].content.$t, Values[i + 1].content.$t, Values[i + 2].content.$t, Values[i + 3].content.$t, Values[i + 4].content.$t, Values[i + 5].content.$t, Values[i + 6].content.$t, Values[i + 7].content.$t, Values[i + 8].content.$t, Values[i + 9].content.$t, Values[i + 10].content.$t, Values[i + 11].content.$t, Values[i + 12].content.$t, Values[i + 13].content.$t, Values[i + 14].content.$t, Values[i + 15].content.$t, Values[i + 16].content.$t, Values[i + 17].content.$t, Values[i + 18].content.$t, Values[i + 19].content.$t, Values[i + 20].content.$t, Values[i + 21].content.$t, Values[i + 22].content.$t, Values[i + 23].content.$t, Values[i + 24].content.$t, Values[i + 25].content.$t, Values[i + 26].content.$t, Values[i + 27].content.$t, Values[i + 28].content.$t, Values[i + 29].content.$t, Values[i + 30].content.$t, Values[i + 31].content.$t, Values[i + 32].content.$t, Values[i + 33].content.$t, Values[i + 34].content.$t, Values[i + 35].content.$t, Values[i + 36].content.$t, Values[i + 37].content.$t, Values[i + 38].content.$t, Values[i + 39].content.$t, Values[i + 40].content.$t, Values[i + 41].content.$t, Values[i + 42].content.$t, Values[i + 43].content.$t, Values[i + 44].content.$t, Values[i + 45].content.$t, Values[i + 46].content.$t, Values[i + 47].content.$t, Values[i + 48].content.$t, Values[i + 49].content.$t, Values[i + 50].content.$t, Values[i + 51].content.$t, Values[i + 52].content.$t
     );
-
   }
+
 render()
-
-
 })
 
 function render() {

@@ -1,7 +1,7 @@
 html, body{margin: 0; padding: 30px 0px 0px 0px; overflow-x: scroll; font-size: 0px;}
 div{display: inline-block; margin: 0;}
 #container{width: 100vw; overflow-x: scroll; height: 100vh;}
-#footer{width: 200vw; height: 30px;}
+#footer{width: 4000px; height: 30px;}
 ::selection{background-color: transparent;}
 body{ -ms-overflow-style: none; } body::-webkit-scrollbar { display: none;}
 .width-1{width: 90px;}/*년도, 구분*//*년도, 구분*/
@@ -17,12 +17,12 @@ body{ -ms-overflow-style: none; } body::-webkit-scrollbar { display: none;}
 .gnb-2:hover{cursor: pointer; background-color: #f3f3f3; transition: 0.3s;}
 .gnb-1:hover{cursor: pointer; background-color: #f3f3f3; transition: 0.3s;}
 .gnb-3:hover{cursor: pointer; background-color: #f3f3f3; transition: 0.3s;}
-.top-1{border-bottom: 3px solid #000; width: 100vw; position: fixed; top: 0px; background-color: #fff; z-index: 999;}
-.top-2{border-bottom: 1px solid #000; width: 200vw; height: 90px;}
+.top-1{border-bottom: 3px solid #000; width: 4000px; position: fixed; top: 0px; background-color: #fff; z-index: 999;}
+.top-2{border-bottom: 1px solid #000; width: 4000px; height: 90px;}
 .top-1 span{transform: translateY(-50%); top: 48%; position: relative; display: inline-block;}
 .top-2 span{transform: translateY(-50%); top: 48%; position: relative; display: inline-block;}
 .top-3 span{transform: translateY(-50%); top: 48%; position: relative; display: inline-block;}
-.book {height: 60px;border-bottom: 1px solid #000; width: 200vw; font-size: 16px;}
+.book {height: 60px;border-bottom: 1px solid #000; width: 4000px; font-size: 16px;}
 .book span{transform: translateY(-50%); top: 48%; position: relative; display: inline-block;}
 .book div {overflow:hidden; box-sizing: border-box; word-break: keep-all; text-align: left; padding-left: 16px;}
 .book div span{ text-overflow: ellipsis; width: 148px; display: block;overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
