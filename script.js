@@ -67,7 +67,7 @@ $.getJSON(spreadsheets, function(data) {
   Values = data.feed.entry;
   // console.log(Values[0].content.$t)
   for (var i = 106; i < Values.length; i += 53) {
-    console.log(Values[i].content.$t)
+    // console.log(Values[i].content.$t)
     books[getIndex(i)] = new Book(
       Values[i].content.$t, Values[i + 1].content.$t, Values[i + 2].content.$t, Values[i + 3].content.$t, Values[i + 4].content.$t, Values[i + 5].content.$t, Values[i + 6].content.$t, Values[i + 7].content.$t, Values[i + 8].content.$t, Values[i + 9].content.$t, Values[i + 10].content.$t, Values[i + 11].content.$t, Values[i + 12].content.$t, Values[i + 13].content.$t, Values[i + 14].content.$t, Values[i + 15].content.$t, Values[i + 16].content.$t, Values[i + 17].content.$t, Values[i + 18].content.$t, Values[i + 19].content.$t, Values[i + 20].content.$t, Values[i + 21].content.$t, Values[i + 22].content.$t, Values[i + 23].content.$t, Values[i + 24].content.$t, Values[i + 25].content.$t, Values[i + 26].content.$t, Values[i + 27].content.$t, Values[i + 28].content.$t, Values[i + 29].content.$t, Values[i + 30].content.$t, Values[i + 31].content.$t, Values[i + 32].content.$t, Values[i + 33].content.$t, Values[i + 34].content.$t, Values[i + 35].content.$t, Values[i + 36].content.$t, Values[i + 37].content.$t, Values[i + 38].content.$t, Values[i + 39].content.$t, Values[i + 40].content.$t, Values[i + 41].content.$t, Values[i + 42].content.$t, Values[i + 43].content.$t, Values[i + 44].content.$t, Values[i + 45].content.$t, Values[i + 46].content.$t, Values[i + 47].content.$t, Values[i + 48].content.$t, Values[i + 49].content.$t, Values[i + 50].content.$t, Values[i + 51].content.$t, Values[i + 52].content.$t
     );
@@ -162,3 +162,30 @@ let replaceHyphen = (string) => {
     return string
   }
 };
+
+var state = 0
+
+function toggle(i) {
+  if(state==i){return}
+  $("#menu-1").removeClass("activated");
+  $("#menu-2").removeClass("activated");
+  $("#menu-3").removeClass("activated");
+  $("#menu-4").removeClass("activated");
+  if(i==0)       {$("#introduction").addClass("invisible"); $("#filter").addClass("invisible"); state = 0;}
+  else if (i==1) {$("#introduction").removeClass("invisible"); $("#filter").addClass("invisible"); $("#menu-2").addClass("activated"); state = 1}
+  else if (i==2) {$("#introduction").addClass("invisible"); $("#filter").removeClass("invisible"); $("#menu-3").addClass("activated"); state = 2}
+  else if (i==3) {$("#introduction").addClass("invisible"); $("#filter").addClass("invisible"); state = 3}
+  }
+
+  var introductions = "https://spreadsheets.google.com/feeds/cells/1cKheOq0aShk6DdjSKgwMqm_6rcJZRE4nzEwGV-HvmdA/2/public/basic?alt=json-in-script&callback=?";
+  $.getJSON(introductions, function(data) {
+    var html2 = "";
+    html2 += "<span>"+data.feed.entry[1].content.$t+"</span>"
+    $("#introduction-1").append(html2);
+    html2 = "";
+    for (var i = 2; i < data.feed.entry.length; i += 2) {
+    html2+="<img src='"+data.feed.entry[i].content.$t+"'/><br>"
+    html2+="<span>"+data.feed.entry[i+1].content.$t+"</span><br>"
+    }
+          $("#introduction-2").append(html2);
+  })

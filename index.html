@@ -15,10 +15,10 @@
   <div id="container">
     <div id="top-1" class="top-1">
       <div class="gnb-1 width-4">&nbsp;</div>
-      <div class="gnb-1 width-2"><span>조판용어색인</span></div>
-      <div class="gnb-1 width-2"><span>소개</span></div>
-      <div class="gnb-1 width-2"><span>골라보기</span></div>
-      <div class="gnb-1 width-2"><span>모두보기</span></div>
+      <div id="menu-1" class="gnb-1 width-2" onclick="toggle(0)"><span>조판용어색인</span></div>
+      <div id="menu-2" class="gnb-1 width-2" onclick="toggle(1)"><span>소개</span></div>
+      <div id="menu-3" class="gnb-1 width-2" onclick="toggle(2)"><span>골라보기</span></div>
+      <div id="menu-4" class="gnb-1 width-2" onclick="toggle(3)"><span>모두보기</span></div>
     </div>
     <div id="top-2" class="top-2">
       <div class="gnb-2 width-4">&nbsp;</div>
@@ -44,8 +44,16 @@
       <div class="gnb-3 width-2"><img src="img/bulletedlist.svg" /></div>
       <div class="gnb-3 width-2"><img src="img/numberedlist.svg" /></div>
     </div>
+     <div id="introduction" class="invisible introduction">
+       <div id="introduction-0"></div>
+       <div id="introduction-1"></div>
+       <div id="introduction-2"></div>
+     </div>
+     <div id="filter" class="invisible filter">
+       <div id="filter-bg"></div>
+       <div id="filter-window"></div>
+     </div>
     <div id="content" class=content>
-
     </div>
     <div id="footer">
       <div class="gnb-4 width-4">&nbsp;</div>
