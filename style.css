@@ -58,4 +58,5 @@ body{ -ms-overflow-style: none; } body::-webkit-scrollbar { display: none;}
 
 
 .openBook{height: auto !important; background-image: url("img/bg2.png");}
+.openBook div span{ white-space: normal;}
 .book p{ font-size: 11px;}
