@@ -50,8 +50,9 @@ body{ -ms-overflow-style: none; } body::-webkit-scrollbar { display: none;}
 #introduction-2 span::selection{background-color: #000; color: #fff;}
 
 #filter{position: fixed; top: 63px; width: 100vw; height: calc(100vh - 63px); z-index: 999}
-#filter-window{position: fixed; top: 63px; width: 100vw; height: 300px; background-color:#fff; z-index: 998; border-bottom: 1px solid #000; box-sizing: 1px;}
-#filter-bg{position: fixed; top: 63px; width: 100vw; height: calc(100vh - 63px); background-color:#000; opacity: 0.6; z-index: 997}
+#filter-window{position: fixed; top: 63px; width: 100vw; height: 300px; background-color:#fff; z-index: 998; border-bottom: 3px solid #000; box-sizing: 1px;}
+#filter-bg{position: fixed; top: 63px; width: 100vw; height: calc(100vh - 63px); background-color:#fff; opacity: 0.8; z-index: 997}
+#filter-bg:hover{cursor: pointer;}
 #introduction-2{ -ms-overflow-style: none; } #introduction-2::-webkit-scrollbar { display: none;}
 #introduction-1{ -ms-overflow-style: none; } #introduction-1::-webkit-scrollbar { display: none;}
 
