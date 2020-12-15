@@ -31,7 +31,7 @@ body{ -ms-overflow-style: none; } body::-webkit-scrollbar { display: none;}
 .book-title span{width:328px !important; }
 .book-year span{width: 58px !important; text-align: center !important; padding-left: 0px  !important;}
 .book-type span{width: 58px !important; text-align: center !important; padding-left: 0px  !important;}
-.book p{display: inline-block; margin-top: 16px; margin-bottom: 18px;}
+.book p{display: inline-block; margin-top: 21px; margin-bottom: 19px;}
 .book:hover{cursor: pointer; background-image: url("img/bg2.png"); transition: 0.3s;}
 
 .visible{visibility: visible;}
